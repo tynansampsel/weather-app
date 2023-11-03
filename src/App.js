@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 function App() {
 
-
   const [hour, setHour] = useState([]);
   const [temperature, setTemperature] = useState([]);
   const [humidity, setHumidity] = useState([]);
@@ -12,10 +11,8 @@ function App() {
   const [currentHour, setCurrentHour] = useState("");
   const [currentHourIndex, setCurrentHourIndex] = useState(0);
 
-
   useEffect(() => {
     GetWeather();
-
   }, [])
 
   const GetWeather = () => {
@@ -43,11 +40,8 @@ function App() {
     <div className="App">
       <form>
       </form>
-
       <h1 className="cityName">Halifax</h1>
-
       <div className="lineTop"></div>
-
       <div className="carouselWrapper">
         <div className="carousel"  >
           {
@@ -63,7 +57,7 @@ function App() {
         </div>
       </div>
       <div className="lineBottom"></div>
-      <p className="creditCreator">Made by <Link to="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Tynan Sampsel</Link></p>
+      <p className="creditCreator">Made by <Link to="https://tynan-sampsel.onrender.com/" target="_blank" rel="noopener noreferrer">Tynan Sampsel</Link></p>
       <p className="creditWeatherAPI">Special thanks to <Link to="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">open-meteo.com</Link></p>
     </div>
   );
