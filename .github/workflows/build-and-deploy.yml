@@ -26,6 +26,9 @@ jobs:
         env:
           CI: false
 
+      - name: Debug - List contents of ./build
+        run: ls -R ./build
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
