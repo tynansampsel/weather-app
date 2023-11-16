@@ -15,7 +15,7 @@ import {
 } from "react-geocode";
 
 setDefaults({
-  key: "AIzaSyCVnL-qU-zuU09BYnrpCKxNCo6smVe2mw0", // Your API key here.
+  key: process.env.GEO_LOCATE_KEY, // Your API key here.
   language: "en", // Default language for responses.
   region: "es", // Default region for responses.
 });
